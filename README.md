@@ -2,7 +2,14 @@ Why bother another Javascript Logging library?
 ==================
 Most Javascript logging libraries log to a separate windows or HTML control. This is very inconvenient in my opinion. There're a few libraries log to browser console. I don't know all of them, but I know some libraries keep history of logs. This may consume a significant amount of memory if you log a lot. So here comes my own `Logger`. It does nothing other than logging to browser console.
 
-How to use?
+
+Features
+--------
++ Named logger, meaning you can give distinct names to your loggers for separate modules.
++ Logging level: `OFF, ERROR, WARN, INFO, DEBUG`. You can set logging level globally or set instance specific logging level for individual loggers. Instance logging level will overwrite global logging level.
+
+
+How to use
 --------
 It's incredibly simple!
 
@@ -32,11 +39,6 @@ In .js:
 Sample output:
 
     INFO Foo 22:39:44:  hello world info
-
-Features
---------
-+ Named logger, meaning you can give distinct names to your loggers for separate modules.
-+ Logging level: `OFF, ERROR, WARN, INFO, DEBUG`. You can set logging level globally or set instance specific logging level for individual loggers. Instance logging level will overwrite global logging level.
 
 Build from source
 -------------

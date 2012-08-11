@@ -54,6 +54,6 @@ Supported browsers
 I have tested it on Chrome 21, Firefox 14, and Internet Explorer 9 with all possible browser mode and document mode combinations.
 Older versions of these browsers should work as well.
 
-Know Issues:
+Known Issues:
 ---------
 Internet Explorer's support for logging object/array is not very good. You have to convert your object/array to string manually before logging them to console if you want better output.

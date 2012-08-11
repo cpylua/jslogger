@@ -22,7 +22,7 @@ Logger.__iehacks = ->
       console[fn] = ->
         f = Function.prototype.bind.call method, console
         f Array.prototype.slice.call(arguments).join(" ")
-    else if Function.prototype.call # ie8
+    else if Function.prototype.call # ie8 and firefox 3.x
       console[fn] = ->
         Function.prototype.call.call method, console, Array.prototype.slice.call(arguments).join(" ")
   undefined

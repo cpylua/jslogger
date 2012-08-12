@@ -6,7 +6,7 @@ Most Javascript logging libraries log to a separate windows or HTML control. Thi
 Features
 --------
 + Named logger, meaning you can give distinct names to your loggers for separate modules.
-+ Logging level: `OFF, ERROR, WARN, INFO, DEBUG`. You can set logging level globally or set instance specific logging level for individual loggers. Instance logging level will overwrite global logging level.
++ Logging level: `OFF, ERROR, WARN, INFO, DEBUG`. You can set logging level globally or set instance specific logging level for individual loggers.
 
 
 How to use
@@ -28,6 +28,9 @@ In .js:
     // logging level defaults to DEBUG
     // you can change logging level
     // use Logger.OFF to turn off logging
+    // you can only set instance logging level to a severer level than global logging level
+    // on the other hand, instance logging level does not affect global logging level
+    // the severer one of instance logging level and global logging level is used as current logging level
     logger.setLevel(Logger.INFO); // set logging level to INFO for this instance
     Logger.setLevel(Logger.WARN); // set global loggin level
     // other logging levels: Logger.DEBUG, Logger.ERROR
